@@ -1,0 +1,68 @@
+:root {
+    --f-size: 1.1rem;
+}
+.main {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.box- {
+    background: #f3f3f3;
+    padding:1rem;
+    border-radius: 5px;
+}
+.box- {
+    margin-top: 1rem;
+    text-align: center;
+}
+.box- [class*=grid-]> div, .box- [class*=grid-]> li {
+    background: orange;
+    padding: 10px;
+    border-radius: 5px;
+}
+h1 {
+    --f-size: 3rem;
+}
+.red {
+    --color: red;
+}
+h3 {
+    --color: #484848;
+    --f-size: 2rem;
+    margin: 1rem auto 3rem ;
+}
+h4 {
+    --color: #484848;
+    --f-size: 1.5rem;
+    margin: 2rem 0;
+}
+p * {
+    --color: #6e6d6d;
+}
+.grid-center b {
+    color: #8d8d8d;
+    position: relative;
+}
+.grid-center b:before {
+    position: absolute;
+    content: '↓';
+    left: 45%;
+    bottom: -16px
+}
+.grid-center strong:first-child {
+    text-align: right;
+}
+.grid-center strong:last-child {
+    text-align: left;
+}
+.grid-center {
+    --col: 1fr .1fr 1fr;
+}
+.pre {
+    width: 500px;
+    margin: 2rem auto;
+}
+@media (max-width: 769px) {
+    .grid-center strong:last-child , .grid-center strong:first-child {
+        text-align: center;
+    }
