@@ -5,15 +5,15 @@
 A simple and easily expandable CSS grid system by **div** and **ul**
 ***
 ### Base grid class
-- grid-2 
-- grid-3
-- grid-4
-- grid-5
-- grid-6
-- grid-1-2
-- grid-2-1
-- grid-1-3
-- grid-3-1
+
+|   equal       | not equal          | 
+| ------------- |:------------------:|
+| grid-2        | grid-1-2           |
+| grid-3        | grid-2-1           |  
+| grid-4        | grid-1-3           | 
+| grid-5        | grid-3-1           | 
+| grid-6        |                    | 
+
 
 ### Grig gap base class
 
@@ -164,7 +164,7 @@ class="grid-4" style="--pad-port-col: 1fr 1fr 1fr;"
     </div>
 ```
 
-## Util class
+## Helper classes
 
 
 ```HTML
