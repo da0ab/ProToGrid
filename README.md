@@ -38,6 +38,7 @@ class="grid-4" style="--phone-col: 1fr 1fr 1fr
 
 ***
 
-# Docs https://da0ab.github.io/ProToGrid/
+# Demo 
+https://da0ab.github.io/ProToGrid/
 
 
