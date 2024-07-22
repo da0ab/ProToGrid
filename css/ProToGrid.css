@@ -87,7 +87,7 @@ ul[class*=grid-] {
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    .phone-revers div:last-child  {
+    .phone-revers > *:last-child  {
         order: -1;
     }
 }
