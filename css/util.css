@@ -51,7 +51,4 @@ h5{
     --f-size: 1.2rem;
     --color: #3e3e3e;
 }
-@media (max-width: 769px) {
-    .grid-center strong:last-child , .grid-center strong:first-child {
-        text-align: center;
-    }
+
