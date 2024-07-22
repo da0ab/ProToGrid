@@ -1,9 +1,9 @@
 [class*=grid-] {
-   clear: both;
-   display: grid;
-   gap: var(--gap, 1vw);
-   margin-bottom: var(--g-m-b, 1vw);
-   grid-template-columns: var(--col);
+    clear: both;
+    display: grid;
+    gap: var(--gap, 1vw);
+    margin-bottom: var(--g-m-b, 1vw);
+    grid-template-columns: var(--col);
 }
 [class*=grid-] > li {
     list-style: none;
@@ -50,6 +50,9 @@ ul[class*=grid-] {
 .grid-3-1 {
     --col: 3fr 1fr;
 }
+.phone-show, .pad-show {
+    display: none;
+}
 @media (max-width: 769px) {
     [class*=grid-] {
         display: block;
@@ -73,27 +76,47 @@ ul[class*=grid-] {
         width: 240vw;
         display: grid !important
     }
+    .phone-hide {
+        display: none !important;
+    }
+    .phone-show {
+        display: block !important;
+    }
+    .phone-revers {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .phone-revers div:last-child  {
+        order: -1;
+    }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-    [class*=ipad-grid], [class*=ipad-grid].ipad-show  {
+    [class*=pad-grid], [class*=pad-grid].pad-show  {
         display: grid !important;
-        grid-template-columns: var(--ipad-col, --col);
+        grid-template-columns: var(--pad-col, --col);
     }
-    .ipad-grid2 {
-        --ipad-col: repeat(2, 1fr);
+    .pad-grid2 {
+        --pad-col: repeat(2, 1fr);
     }
-    .ipad-grid3 {
-        --ipad-col: repeat(3, 1fr);
+    .pad-grid3 {
+        --pad-col: repeat(3, 1fr);
+    }
+    .pad-hide {
+        display: none !important;
+    }
+    .pad-show {
+        display: block !important;
     }
 }
 @media  (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
- 
-    [class*=ipad-port-grid], [class*=ipad-port-grid].ipad-show  {
+
+    [class*=pad-port-grid], [class*=pad-port-grid].pad-show  {
         display: grid !important;
-        grid-template-columns: var(--ipad-port-col, --col);
+        grid-template-columns: var(--pad-port-col, --col);
     }
-    .ipad-port-grid2 {
-        --ipad-port-col: repeat(2, 1fr);
+    .pad-port-grid2 {
+        --pad-port-col: repeat(2, 1fr);
     }
 }
 
