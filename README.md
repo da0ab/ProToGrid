@@ -164,6 +164,23 @@ class="grid-4" style="--pad-port-col: 1fr 1fr 1fr;"
     </div>
 ```
 
+## Util class
+
+
+```HTML
+class="phone-show"
+```
+```HTML
+class="phone-hide"
+```
+```HTML
+class="pad-hide"
+```
+```HTML
+class="pad-show"
+```
+
+
 ***
 
 ## Demo
