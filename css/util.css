@@ -29,38 +29,27 @@ h1 {
 h3 {
     --color: #484848;
     --f-size: 2rem;
-    margin: 1rem auto 3rem ;
+    margin: 3rem auto;
+    text-align: center;
 }
-h4 {
+h4, h5  {
     --color: #484848;
     --f-size: 1.5rem;
     margin: 2rem 0;
 }
-p * {
-    --color: #6e6d6d;
-}
-.grid-center b {
-    color: #8d8d8d;
-    position: relative;
-}
-.grid-center b:before {
-    position: absolute;
-    content: '↓';
-    left: 45%;
-    bottom: -16px
-}
-.grid-center strong:first-child {
-    text-align: right;
-}
-.grid-center strong:last-child {
-    text-align: left;
-}
-.grid-center {
-    --col: 1fr .1fr 1fr;
+h5{
+    --f-size: 1.2rem;
 }
 .pre {
     width: 500px;
     margin: 2rem auto;
+}
+.box-border > div {
+    border: 3px solid #e7e7e7;
+    padding: 3rem 1rem 2rem 5rem;
+    border-radius: 5px;
+    --f-size: 1.2rem;
+    --color: #3e3e3e;
 }
 @media (max-width: 769px) {
     .grid-center strong:last-child , .grid-center strong:first-child {
