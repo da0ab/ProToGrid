@@ -58,7 +58,7 @@ class="grid-4" style="--phone-col: 1fr 1fr 1fr;"
 
 ## Mobile
 
-**Default display block for screen size @media (max-width: 769px)**
+**Default phone grid** screen size max-width: 769px
 
 ```HTML
 @media (max-width: 769px) {
@@ -96,7 +96,7 @@ class="grid-4" style="--phone-col: 1fr 1fr 1fr;"
 ```
 
 
-**Default display block for screen size @media (min-width: 769px) and (max-width: 1024px)**
+**Pad grid** screen size min-width: 769px and max-width: 1024px
 
 Simply saves the mesh
 ```HTML
@@ -112,13 +112,13 @@ Changes the number of cells to 3
 ```HTML
 class="grid-4 .ipad-grid2" 
 ```
-**Ipad inline style**
+**Pad inline style**
 
 ```HTML
 class="grid-4" style="--ipad-col: 1fr 1fr 1fr;"
 ```
 
-**Default display block for screen size @media  (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)** 
+**Pad orientation portrait grid** 
 
 Simply saves the mesh
 ```HTML
@@ -129,7 +129,7 @@ Changes the number of cells to 2
 class="grid-3 .ipad-port-grid2" 
 ```
 
-**Ipad portret inline style**
+**Pad portrait inline style**
 
 ```HTML
 class="grid-4" style="--ipad-port-col: 1fr 1fr 1fr;"
