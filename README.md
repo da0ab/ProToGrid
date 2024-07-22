@@ -15,7 +15,7 @@ A simple and easily expandable CSS grid system
 - grid-1-3
 - grid-3-1
 
-**Grig gap base class**
+### Grig gap base class
 
 - gap-0
 - gap-2
@@ -100,40 +100,43 @@ class="grid-4" style="--phone-col: 1fr 1fr 1fr;"
 
 Simply saves the mesh
 ```HTML
-class="grid-3 .ipad-grid" 
+class="grid-3 .pad-grid" 
 ```
 
 Changes the number of cells to 2
 ```HTML
-class="grid-3 .ipad-grid2" 
+class="grid-3 .pad-grid2" 
 ```
 
 Changes the number of cells to 3
 ```HTML
-class="grid-4 .ipad-grid2" 
+class="grid-4 .pad-grid2" 
 ```
 **Pad inline style**
 
 ```HTML
-class="grid-4" style="--ipad-col: 1fr 1fr 1fr;"
+class="grid-4" style="--pad-col: 1fr 1fr 1fr;"
 ```
 
 **Pad orientation portrait grid** 
 
 Simply saves the mesh
 ```HTML
-class="grid-3 ipad-port-grid" 
+class="grid-3 pad-port-grid" 
 ```
 Changes the number of cells to 2
 ```HTML
-class="grid-3 .ipad-port-grid2" 
+class="grid-3 .pad-port-grid2" 
 ```
 
 **Pad portrait inline style**
 
 ```HTML
-class="grid-4" style="--ipad-port-col: 1fr 1fr 1fr;"
+class="grid-4" style="--pad-port-col: 1fr 1fr 1fr;"
 ```
+
+## Bonus
+
 ### Automatic scrolling on your phone
 ```HTML
 <div class="phone-scroll">
@@ -146,6 +149,19 @@ class="grid-4" style="--ipad-port-col: 1fr 1fr 1fr;"
        </div>
     </div>
 </div>
+```
+
+### Swap places on the phone
+
+```HTML
+    <div class="grid-2 phone-revers">
+        <div>
+           1 of 2
+        </div>
+        <div>
+           2 of 1
+       </div>
+    </div>
 ```
 
 ***
