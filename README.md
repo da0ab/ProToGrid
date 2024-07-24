@@ -6,26 +6,16 @@ A simple and easily expandable CSS grid system by **div** and **ul**
 ***
 ### Base grid class
 
-|   equal       | not equal          | 
-| ------------- |:------------------:|
-| grid-2        | grid-1-2           |
-| grid-3        | grid-2-1           |  
-| grid-4        | grid-1-3           | 
-| grid-5        | grid-3-1           | 
-| grid-6        |                    | 
+**Equal class:**
+
+ grid-2, grid-3, grid-4,  grid-5, grid-6 
+ 
+**Not equalclass:**
+
+grid-1-2, grid-2-1, grid-1-3, grid-3-1
 
 
-### Grig gap base class
 
-- gap-0
-- gap-2
-- gap-3
-- gap-4
-
-**Gap inline style**
-```HTML
-class="grid-3" style="--gap: 18rem;"
-```
 ### Easy class creation thanks to css
 ```HTML
 [class*=grid-] {
@@ -55,6 +45,16 @@ class="grid-3" style="--gap: 18rem;"
 ```HTML
 class="grid-4" style="--phone-col: 1fr 1fr 1fr;"
 ```
+
+### Grig gap base class
+
+gap-0, gap-2, gap-3, gap-4
+
+**Gap inline style**
+```HTML
+class="grid-3" style="--gap: 18rem;"
+```
+
 
 ## Mobile
 
