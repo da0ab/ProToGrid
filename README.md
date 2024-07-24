@@ -2,7 +2,7 @@
 
 # ProToGrid
 
-A simple and easily expandable CSS grid sustem by **div** and **ul**
+A simple and easily expandable CSS grid system by **div** and **ul**
 ***
 ### Base grid class
 
