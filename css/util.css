@@ -6,6 +6,7 @@
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    font-family: "Open Sans", sans-serif;
 }
 section.box- {
     background: #f3f3f3;
@@ -44,7 +45,6 @@ h5{
 .pre {
     width: 500px;
     margin: 2rem auto;
-    font-family: "Open Sans", sans-serif;
 }
 .box-border > div {
     border: 3px solid #e7e7e7;
