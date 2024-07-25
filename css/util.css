@@ -2,11 +2,13 @@
 :root {
     --f-size: 1.1rem;
 }
+body {
+    font-family: "Open Sans", sans-serif;    
+}
 .main {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Open Sans", sans-serif;
 }
 section.box- {
     background: #f3f3f3;
