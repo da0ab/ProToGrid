@@ -81,12 +81,12 @@ class="grid-3" style="--gap: 18rem;"
 
 Simply saves the mesh
 ```HTML
-class="grid-3 .phone-grid" 
+class="grid-3 phone-grid" 
 ```
 
 Changes the number of cells to 2
 ```HTML
-class="grid-3 .phone-grid2" 
+class="grid-3 phone-grid2" 
 ```
 
 **Phone inline style**
