@@ -64,7 +64,7 @@ ul[class*=grid-] {
     [class*=phone-grid], [class*=phone-grid].phone-show {
         display: grid !important;
         --gap: 3vw;
-        grid-template-columns: var(--phone-col, --col);
+        grid-template-columns: var(--col, --phone-col);
     }
     .phone-grid2 {
         --phone-col: repeat(2, 1fr) !important;
@@ -94,7 +94,7 @@ ul[class*=grid-] {
 @media (min-width: 769px) and (max-width: 1024px) {
     [class*=pad-grid], [class*=pad-grid].pad-show  {
         display: grid !important;
-        grid-template-columns: var(--pad-col, --col);
+        grid-template-columns: var(--col, --pad-col);
     }
     .pad-grid2 {
         --pad-col: repeat(2, 1fr);
@@ -113,7 +113,7 @@ ul[class*=grid-] {
 
     [class*=pad-port-grid], [class*=pad-port-grid].pad-show  {
         display: grid !important;
-        grid-template-columns: var(--pad-port-col, --col);
+        grid-template-columns: var(--col, --pad-port-col);
     }
     .pad-port-grid2 {
         --pad-port-col: repeat(2, 1fr);
