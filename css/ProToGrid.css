@@ -68,8 +68,7 @@ ul[class*=grid-] {
     }
     [class*=phone-grid] {
         --phone-col:  var(--col);
-    }
-    
+    }    
     .phone-grid2 {
         --phone-col: repeat(2, 1fr) !important;
     }
@@ -95,15 +94,11 @@ ul[class*=grid-] {
         order: -1;
     }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    
+@media (min-width: 769px) and (max-width: 1024px) {   
     [class*=pad-grid], [class*=pad-grid].pad-show  {
         display: grid !important;
         grid-template-columns: var(--col, --pad-col);
-    }
-
-    
+    }    
     .pad-grid2 {
         --pad-col: repeat(2, 1fr);
     }
@@ -117,8 +112,7 @@ ul[class*=grid-] {
         display: block !important;
     }
 }
-@media  (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-
+@media  (min-device-width : 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     [class*=pad-port-grid], [class*=pad-port-grid].pad-show  {
         display: grid !important;
         grid-template-columns: var(--col, --pad-port-col);
@@ -127,5 +121,6 @@ ul[class*=grid-] {
         --pad-port-col: repeat(2, 1fr);
     }
 }
+
 
 
