@@ -50,7 +50,7 @@ ul[class*=grid-] {
 .grid-3-1 {
     --col: 3fr 1fr;
 }
-.phone-show, .pad-show {
+.phone-show, .pad-show, .hide {
     display: none;
 }
 @media (max-width: 769px) {
@@ -64,13 +64,10 @@ ul[class*=grid-] {
     [class*=phone-grid], [class*=phone-grid].phone-show {
         display: grid !important;
         --gap: 3vw;
-        grid-template-columns: var(--phone-col);
+        grid-template-columns: var(--col, --phone-col);
     }
-    [class*=phone-grid] {
-        --phone-col:  var(--col);
-    }    
     .phone-grid2 {
-        --phone-col: repeat(2, 1fr) !important;
+        --col: repeat(2, 1fr) !important;
     }
     .phone-scroll {
         overflow: scroll;
@@ -94,16 +91,16 @@ ul[class*=grid-] {
         order: -1;
     }
 }
-@media (min-width: 769px) and (max-width: 1024px) {   
+@media (min-width: 769px) and (max-width: 1024px) {
     [class*=pad-grid], [class*=pad-grid].pad-show  {
         display: grid !important;
         grid-template-columns: var(--col, --pad-col);
-    }    
+    }
     .pad-grid2 {
-        --pad-col: repeat(2, 1fr);
+        --col: repeat(2, 1fr);
     }
     .pad-grid3 {
-        --pad-col: repeat(3, 1fr);
+        --col: repeat(3, 1fr);
     }
     .pad-hide {
         display: none !important;
@@ -112,15 +109,13 @@ ul[class*=grid-] {
         display: block !important;
     }
 }
-@media  (min-device-width : 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media  (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
     [class*=pad-port-grid], [class*=pad-port-grid].pad-show  {
         display: grid !important;
-        grid-template-columns: var(--col, --pad-port-col);
+        grid-template-columns: var( --col, --pad-port-col);
     }
     .pad-port-grid2 {
-        --pad-port-col: repeat(2, 1fr);
+        --col: repeat(2, 1fr);
     }
 }
-
-
-
