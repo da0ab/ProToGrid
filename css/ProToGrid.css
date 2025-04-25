@@ -109,7 +109,7 @@ ul[class*=grid-] {
         display: block !important;
     }
 }
-@media  (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+@media  (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
     [class*=pad-port-grid], [class*=pad-port-grid].pad-show  {
         display: grid !important;
